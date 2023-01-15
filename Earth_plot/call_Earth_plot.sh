@@ -1,3 +1,4 @@
+#The following lines are used for compiling our code.
 g++ -c Network.cpp -w -o Network.o
 g++ -c SP.cpp -w -o SP.o
 g++ -c range_tree.cpp -w -o range_tree.o
