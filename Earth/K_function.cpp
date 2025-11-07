@@ -140,7 +140,7 @@ void compute_K_function(model& our_model)
 	if (our_model.method == 2) //SPS
 		call_SPS(our_model);
 	if (our_model.method == 3) //EAR
-		call_SPS(our_model); //This is NOT a typo. In the call_SPS function, we need to call the "point_edge_count" and "point_edge_count_same_edge" functions (in count.cpp), which show the difference between SPS and EAR.
+		call_SPS(our_model); //This is NOT a typo. In the call_SPS function, we need to call the "point_edge_count" and "point_edge_count_same_edge" functions (in count.cpp), which show the differences between SPS and EAR.
 
 	auto end_s = chrono::high_resolution_clock::now();
 
