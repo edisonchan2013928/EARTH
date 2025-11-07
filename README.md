@@ -15,15 +15,23 @@ g++ -c K_function.cpp -w -o K_function.o
 g++ main.cpp -O3 -o main Network.o SP.o range_tree.o count.o K_function.o
 ```
 
-After you have successfully compiled the code, you need to provide the correct parameters for calling our code. In the following, we discuss each parameter.
+After you have successfully compiled the code, you need to provide the correct parameters for calling our C++ code. 
+```
+our_model.network_fileName = argv[1];
+our_model.method = atoi(argv[2]);
+our_model.s_threshold = atof(argv[3]);
+our_model.t_threshold = atof(argv[4]);
+```
 
-our_model.network_fileName: the input data file 
+In the following, we discuss each parameter.
 
-our_model.method: method = 1: RQS, method = 2: SPS, method = 3: EAR 
+**our_model.network_fileName:** the input data file 
 
-our_model.s_threshold: the spatial threshold (e.g., 1000) in terms of meters
+**our_model.method:** method = 1: RQS, method = 2: SPS, method = 3: EAR 
 
-our_model.t_threshold: the temporal threshold (e.g., 3) in terms of days
+**our_model.s_threshold:** the spatial threshold (e.g., 1000) in terms of meters
+
+**our_model.t_threshold:** the temporal threshold (e.g., 3) in terms of days
 
 Here, we provide an example for running the code.
 ```
@@ -49,27 +57,41 @@ g++ -c K_function.cpp -w -o K_function.o
 
 g++ main.cpp -O3 -o main Network.o SP.o range_tree.o count.o K_function.o
 ```
-After you have successfully compiled the code, you need to provide the correct parameters for calling our code. In the following, we discuss each parameter.
+After you have successfully compiled the code, you need to provide the correct parameters for calling our C++ code. 
+```
+our_model.network_fileName = argv[1];
+our_model.out_fileName = argv[2];
+our_model.method = atoi(argv[3]);
+our_model.L = atoi(argv[4]);
+our_model.M = atoi(argv[5]);
+our_model.T = atoi(argv[6]);
+our_model.start_s_tau = atof(argv[7]);
+our_model.incr_s_tau = atof(argv[8]);
+our_model.start_t_tau = atof(argv[9]);
+our_model.incr_t_tau = atof(argv[10]);
+```
 
-our_model.network_fileName: the input data file
+In the following, we discuss each parameter.
 
-our_model.out_fileName: the output data file
+**our_model.network_fileName:** the input data file
 
-our_model.method: method = 1: RQS, method = 2: SPS, method = 3: EAR, method = 4: MTS, method = 5: EARTH
+**our_model.out_fileName:** the output data file
 
-our_model.L: number of datasets (with L - 1 randomly generated datasets)
+**our_model.method:** method = 1: RQS, method = 2: SPS, method = 3: EAR, method = 4: MTS, method = 5: EARTH
 
-our_model.M: number of spatial thresholds
+**our_model.L:** number of datasets (with L - 1 randomly generated datasets)
 
-our_model.T: number of temporal thresholds
+**our_model.M:** number of spatial thresholds
 
-our_model.start_s_tau: the initial spatial threshold (e.g., 200) in terms of meters
+**our_model.T:** number of temporal thresholds
 
-our_model.incr_s_tau: the incremental spatial threshold (e.g., 200) in terms of meters
+**our_model.start_s_tau:** the initial spatial threshold (e.g., 200) in terms of meters
 
-our_model.start_t_tau: the initial temporal threshold (e.g., 3) in terms of days
+**our_model.incr_s_tau:** the incremental spatial threshold (e.g., 200) in terms of meters
 
-our_model.incr_t_tau: the incremental temporal threshold (e.g., 2) in terms of days
+**our_model.start_t_tau:** the initial temporal threshold (e.g., 3) in terms of days
+
+**our_model.incr_t_tau:** the incremental temporal threshold (e.g., 2) in terms of days
 
 Here, we provide an example for running the code.
 ```
