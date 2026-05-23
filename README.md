@@ -1,5 +1,5 @@
 # EARTH
-This code is the implementation of our paper "EARTH: Accelerating Spatiotemporal Network K-function-based Analytics", which is currently accepted in SIGKDD 2026.
+This code is the implementation of our paper "EARTH: Accelerating Spatiotemporal Network K-function-based Analytics", which has been accepted in SIGKDD 2026.
 
 <!-- Note that there are two folders in this Github link, which are (1) Earth and (2) Earth_plot. In the "Earth" folder, this is the implementation of all experiments for computing a spatiotemporal network K-function (Section V-B). In the "Earth_plot" folder, this is the implementation of all experiments for generating a spatiotemporal network K-function plot (Section V-C). To compile and use our code, you can refer to the "call_Earth.sh" and "call_Earth_plot.sh" files in the "Earth" and "Earth_plot" folders, respectively. These two shell script files show the details of compilation and the descriptions of different parameters. -->
 
